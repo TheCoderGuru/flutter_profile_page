@@ -89,10 +89,14 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 60),
-                  Image.network(
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.network(
                       'https://images.unsplash.com/photo-1516527653392-602455dd9cf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80',
                       height: 120,
                       width: 200,
+    
+                    ),
                   ),
                 ]
               )
